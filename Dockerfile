@@ -1,5 +1,5 @@
-FROM rockylinux/rockylinux:8.4
-RUN echo 8.4 > /etc/yum/vars/releasever
+FROM rockylinux/rockylinux:8.5
+RUN echo 8.5 > /etc/yum/vars/releasever
 RUN for each in $(ls /etc/yum.repos.d); do \
         cat /etc/yum.repos.d/$each; \
         sed -i  /etc/yum.repos.d/$each -e "s,#baseurl=,baseurl=,"; \
