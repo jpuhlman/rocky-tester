@@ -1,5 +1,5 @@
-FROM rockylinux/rockylinux:9.2
-RUN echo 9.2 > /etc/yum/vars/releasever
+FROM rockylinux/rockylinux:9.3
+RUN echo 9.3 > /etc/yum/vars/releasever
 RUN echo vault/rocky > /etc/yum/vars/contentdir
 RUN for each in $(ls /etc/yum.repos.d); do \
         cat /etc/yum.repos.d/$each; \
